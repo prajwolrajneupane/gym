@@ -39,10 +39,22 @@ body {
 
 }
 
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  mix-blend-mode: multiply;
+  pointer-events: none; }
 video {
   height: 110vh;
   width: 100%;
   z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5); /* Change this to the desired color */
+  mix-blend-mode: multiply;
   object-fit: cover;
 }
 
@@ -54,6 +66,7 @@ video {
 
 
 .text{
+  
   display: flex;
   gap: 50px;
 }
