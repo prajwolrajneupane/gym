@@ -11,8 +11,7 @@ document.addEventListener("mousemove", (mouseEvent) => {
     // console.log(mouseEvent.x);
 })
 
-
-
+const tl = gsap.timeline();
 gsap.to(".nav", {
     scrollTrigger: {
         scrub: 1,
@@ -34,3 +33,42 @@ gsap.to(".nav", {
 
 })
 
+gsap.from(".text", {
+    duration: 0.5,
+    opacity:-1
+
+})
+tl.from(".page1_text .p1", {
+ 
+    y: 190,
+    duration: 0.7,
+    opacity:0
+    ,
+    delay:0.5
+}
+)
+tl.from(".page1_text .p2", {
+ 
+    y: 105,
+    
+    duration: 0.7,
+    opacity:0
+    ,
+    
+})
+
+
+
+tl.from(".mighty", {
+ 
+    duration: 0.5,
+    opacity:0
+    ,
+    
+})
+
+tl.from(".join_now",{
+    duration: 1,
+    opacity:0
+    ,  
+})
