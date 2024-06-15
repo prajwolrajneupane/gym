@@ -1,54 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'poppins';
+  font-family: 'Poppins', sans-serif;
   color-scheme: dark;
-
 }
 
 html,
 body {
-
   height: 100%;
   width: 100%;
-
 }
-
-
 
 .nav {
   cursor: pointer;
   height: 130px;
   width: 100%;
-  /* background-color: red; */
   display: flex;
   align-items: center;
   padding: 0 100px;
-
   gap: 50px;
   position: fixed;
-  justify-content:space-between;
+  justify-content: space-between;
   z-index: 111;
 }
 
 .nav img {
-  height: 5vw;
-
+  height: 7vw;
 }
-
-
 
 video {
   height: 110vh;
   width: 100%;
   z-index: -1;
-  background-color: rgba(0, 0, 0, 0.5); /* Change this to the desired color */
-  mix-blend-mode: multiply;
+
   object-fit: cover;
-position: fixed;
+  position: fixed;
 }
 
 .nav h4 {
@@ -57,9 +44,7 @@ position: fixed;
   font-size: 1.1vw;
 }
 
-
-.text{
-  
+.text {
   display: flex;
   gap: 50px;
 }
@@ -68,37 +53,125 @@ position: fixed;
   height: 25px;
   width: 25px;
   border-radius: 50%;
-  background-color:  #f97316;
+  background-color: #f97316;
   filter: blur(7px);
-pointer-events: none;
+  pointer-events: none;
   position: fixed;
   z-index: 99;
-
 }
 
-.page1 {
-  position: relative;
-  height: 100vh;
+.main {
+position: relative;
+  background-color: rgba(0, 0, 0, 0.37);
+width: 100%;
+}
+
+.page1,
+.page2 {
+  height: 100vh; 
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
 
-.page1 h1{
+.page1 h1 {
   position: relative;
   top: 40px;
 }
-.main {
-width: 100%;
-  background-color: rgba(0, 0, 0, 0.37);
-  position: relative;
+
+.join_now {
+  margin-top: 70px;
+  display: flex;
+  gap: 20px;
 }
 
-.join_now{
-  margin-top: 70px;
+
+
+
+
+
+.join{
+
+  transition: 1s;  
+}
+.join:hover{
+
+color: black;
+}
+.contact{
+  background:none; border: 1px solid white ; padding: 11.5px; border-radius: 5px; cursor: pointer;
+transition: 1s;
+}
+.contact:hover{
+  background-color:  #f97316;
+  border: 1px solid #f97316 ;
+  color: black;
+
+}
+
+.page2 {
 display: flex;
+flex-direction: column;
+height: 90vh;
+overflow-y: hidden;
+width: 100%;
+
+}
+.about{
+  margin-top:6rem;
+  margin-bottom:-3rem ;
+  height: 20%;
+  
+font-size: 0px;
+}
+
+.about:before, .about:after{
+  content: "";
+display: flex;
+  flex: 1 1;
+ 
+  border-bottom: 1px solid;
+  margin: auto;
+}
+.about:before {
+  margin-right: -10px;
+  margin-left: -10px
+
+}
+.about:after {
+  margin-right: -10px
+;
+  margin-left: -10px
+}
+.content{
+  height: 80%;
+  display: flex;
+  margin-top: 4rem;
+margin-right: 7rem;
+margin-left: 7rem;
+text-align: start;
+display: flex; 
 gap: 20px;
+overflow: hidden;
+}
+.content img{
+  height: 70%;
+  border-radius: 10px;
+}
+.content .desc{
+  display: flex;
+float: right;
+
+  line-height: 2;
+}
+.content .text{
+  display: flex;
+
+  flex-direction: column;
+  
+}
+.content{
+  opacity: 0;
 }

@@ -12,6 +12,8 @@ document.addEventListener("mousemove", (mouseEvent) => {
 })
 
 const tl = gsap.timeline();
+const tl2 = gsap.timeline();
+
 gsap.to(".nav", {
     scrollTrigger: {
         scrub: 1,
@@ -71,4 +73,46 @@ tl.from(".join_now",{
     duration: 1,
     opacity:0
     ,  
+})
+
+
+gsap.to(".main", {
+    backgroundColor: "#000",
+    scrollTrigger: {
+        trigger: ".main",
+        scroller: "body",
+        start: "top -2%"
+        , end: "top -80%"
+        , scrub: 2
+    }
+})
+
+gsap.to(".about",{
+
+    scrollTrigger: {
+        trigger: "h1",
+        scroller: "body",
+        start: "top -40%"
+        , end: "top -43%"
+        , scrub: 0,
+        marker:true
+    },
+    fontSize:"30px",
+
+    
+})
+
+gsap.to(".content",{
+
+    scrollTrigger: {
+        trigger: ".content",
+        scroller: "body",
+        start: "top 75%"
+        , end: "bottom 100%"
+        , scrub:0.5,
+        markers:true
+    },
+opacity:1
+
+    
 })
