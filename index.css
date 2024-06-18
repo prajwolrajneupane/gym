@@ -68,7 +68,7 @@ width: 100%;
 }
 
 .page1,
-.page2 {
+.page2,.page3 {
   height: 100vh; 
   width: 100%;
   display: flex;
@@ -112,23 +112,30 @@ transition: 1s;
 
 }
 
-.page2 {
+.page2,.page3 {
 display: flex;
 flex-direction: column;
-height: 90vh;
+height:80vh;
 overflow-y: hidden;
 width: 100%;
 
-}
-.about{
-  margin-top:6rem;
-  margin-bottom:-3rem ;
-  height: 20%;
-  
-font-size: 0px;
+
 }
 
-.about:before, .about:after{
+.about{
+  margin-top:6rem;
+  height: 20%;
+  font-size: 0px;
+
+}
+.classes{
+  margin-top:1rem;
+  font-size: 0px; 
+}
+
+
+
+.about:before, .about:after, .classes:before, .classes:after{
   content: "";
 display: flex;
   flex: 1 1;
@@ -136,50 +143,101 @@ display: flex;
   border-bottom: 1px solid;
   margin: auto;
 }
-.about:before {
+.about:before, .classes:before {
   margin-right: -10px;
   margin-left: -10px
 
 }
-.about:after {
+.about:after,.classes:after {
   margin-right: -10px
 ;
   margin-left: -10px
 }
 .content{
   height: 80%;
+  width: 80%;
   margin-top: 4rem;
-margin-right: 7rem;
-margin-left: 7rem;
+
 text-align: start;
 display: flex; 
+flex-direction: row;
 gap: 20px;
 }
 
 
 
-.content image{
-  height: 40vh;
-  border-radius: 10px;
-position: fixed;
-}
-.content .image img{
-  border-radius: 20px;
-  height: 50vh;
-  width: 50vh;
-}
 .content .desc{
   display: flex;
-float: right;
 
-  line-height: 2;
+line-height: 2;
 }
-.content .text{
+.about_text{
+  font-size: 1.3vw;
   display: flex;
-
   flex-direction: column;
   
 }
 .content{
   opacity: 0;
+}
+
+
+.about_text{
+  width: 90%;
+}
+.images{
+  height: 70%;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+width: 45%;
+object-fit:contain;
+overflow: hidden;
+transition: 0;
+display: flex;
+position: relative;
+}
+
+.images img{
+ border-radius:10px;
+  position: relative;
+}
+
+
+.mobile-navbar-btn {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.mobile-nav-icon {
+  width: 5rem;
+  height: 4rem;
+  color: black;
+}
+
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+/* navbar lukauna */
+@media(max-width:980px) {
+.nav {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
 }

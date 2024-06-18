@@ -1,4 +1,10 @@
 
+
+
+  
+// cursor follow ko lagi
+
+
 cursor = document.querySelector(".cursor");
 
 document.addEventListener("mousemove", (mouseEvent) => {
@@ -76,7 +82,7 @@ tl.from(".join_now",{
 })
 
 
-gsap.to(".main", {
+tl.to(".main", {
     backgroundColor: "#000",
     scrollTrigger: {
         trigger: ".main",
@@ -87,8 +93,7 @@ gsap.to(".main", {
     }
 })
 
-gsap.to(".about",{
-
+tl.to(".about",{
     scrollTrigger: {
         trigger: "h1",
         scroller: "body",
@@ -96,6 +101,22 @@ gsap.to(".about",{
         , end: "top -43%"
         , scrub: 0,
         marker:true
+    },
+    fontSize:"30px",
+
+    
+})
+
+tl.to(".classes",{
+    delay:10,
+
+    scrollTrigger: {
+        trigger: ".page3.classes",
+        scroller: "body",
+        start: "top -40%"
+        , end: "top -43%"
+        , scrub: 0,
+        markers:true
     },
     fontSize:"30px",
 
