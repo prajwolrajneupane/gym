@@ -4,6 +4,7 @@
   padding: 0;
   font-family: 'Poppins', sans-serif;
   color-scheme: dark;
+  color: white;
 }
 
 html,
@@ -147,18 +148,25 @@ display: flex;
 }
 .content{
   height: 80%;
-  display: flex;
   margin-top: 4rem;
 margin-right: 7rem;
 margin-left: 7rem;
 text-align: start;
 display: flex; 
 gap: 20px;
-overflow: hidden;
 }
-.content img{
-  height: 70%;
+
+
+
+.content image{
+  height: 40vh;
   border-radius: 10px;
+position: fixed;
+}
+.content .image img{
+  border-radius: 20px;
+  height: 50vh;
+  width: 50vh;
 }
 .content .desc{
   display: flex;

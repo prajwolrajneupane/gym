@@ -1,5 +1,5 @@
+
 cursor = document.querySelector(".cursor");
-cursorBlur = document.querySelector(".cursorBlur");
 
 document.addEventListener("mousemove", (mouseEvent) => {
     cursor.style.left = mouseEvent.x + 0 + "px";
@@ -110,7 +110,6 @@ gsap.to(".content",{
         start: "top 75%"
         , end: "bottom 100%"
         , scrub:0.5,
-        markers:true
     },
 opacity:1
 
