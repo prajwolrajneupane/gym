@@ -42,7 +42,7 @@ video {
 .nav h4 {
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.1vw;
+  font-size: 100%;
 }
 
 .text {
@@ -68,7 +68,7 @@ width: 100%;
 }
 
 .page1,
-.page2,.page3 {
+.page2 {
   height: 100vh; 
   width: 100%;
   display: flex;
@@ -88,7 +88,11 @@ width: 100%;
   gap: 20px;
 }
 
-
+.page3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 
@@ -112,7 +116,7 @@ transition: 1s;
 
 }
 
-.page2,.page3 {
+.page2 {
 display: flex;
 flex-direction: column;
 height:80vh;
@@ -129,8 +133,9 @@ width: 100%;
 
 }
 .classes{
-  margin-top:1rem;
+  margin-top:6rem;
   font-size: 0px; 
+  height: 20%;
 }
 
 
@@ -206,22 +211,6 @@ position: relative;
 }
 
 
-.mobile-navbar-btn {
-  display: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.mobile-nav-icon {
-  width: 5rem;
-  height: 4rem;
-  color: black;
-}
-
-
-.mobile-nav-icon[name="close-outline"] {
-  display: none;
-}
 
 /* navbar lukauna */
 @media(max-width:980px) {
@@ -240,4 +229,100 @@ position: relative;
   opacity: 0;
   pointer-events: none;
 }
+}
+
+
+/* tyo cards harko lagi css: */
+
+
+
+#cards-container {
+  margin: 100px 0px;
+
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.card .overlay p{
+  font-size: 15px;
+}
+
+.card {
+  perspective: 800px;
+
+  height: 100%;
+  width: 100%;
+  /* background-color: blue; */
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: all ease 0.6s;
+}
+
+#card1 {
+  background-image: url(https://www.guardian.in/cdn/shop/articles/benefits-of-zumba.jpg?v=1712652853&width=1000);
+}
+
+#card2 {
+  background-image: url( https://thekindhelper.com/wp-content/uploads/2022/10/istockphoto-903737446-612x612-3.jpg);
+}
+
+#card3 {
+  background-image: url(https://cdn.mos.cms.futurecdn.net/YwmMceyxm7TKPwjJRq6iS6.jpg);
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+
+  white-space: wrap;
+  background:  linear-gradient(to right, #f97316,#9a3412);
+  padding: 30px;
+  padding-top: 160px;
+  opacity: 0;
+  transition: all ease 0.6s;
+}
+
+.overlay h4 {
+  color: #000;
+  font-size: 35px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.overlay h4 , .overlay p {
+  color: #000;
+  position: relative;
+top: -100px;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: rotate3d(-1, 1, 0, 20deg);
+}
+
+
+@media (max-width:1111px) {
+  #cards-container {
+      display: flex;
+      flex-wrap: wrap;
+
+      height: auto;
+  }
+
+
+
+
 }

@@ -100,9 +100,8 @@ tl.to(".about",{
         start: "top -40%"
         , end: "top -43%"
         , scrub: 0,
-        marker:true
     },
-    fontSize:"30px",
+    fontSize:"2.5vw",
 
     
 })
@@ -116,7 +115,6 @@ tl.to(".classes",{
         start: "top -40%"
         , end: "top -43%"
         , scrub: 0,
-        markers:true
     },
     fontSize:"30px",
 
