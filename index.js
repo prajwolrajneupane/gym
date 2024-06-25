@@ -41,6 +41,8 @@ gsap.to(".nav", {
 
 })
 
+
+
 gsap.from(".text", {
     duration: 0.5,
     opacity:-1
@@ -89,6 +91,18 @@ tl.to(".main", {
         scroller: "body",
         start: "top -2%"
         , end: "top -80%"
+        , scrub: 2
+    }
+})
+
+
+tl.to("video", {
+opacity:0,
+    scrollTrigger: {
+        trigger: ".main",
+        scroller: "body",
+        start: "top -2%"
+        , end: "top -200%"
         , scrub: 2
     }
 })
