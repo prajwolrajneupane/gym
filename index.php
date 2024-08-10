@@ -16,19 +16,17 @@
 </head>
 <body>
 
-
     <div class="nav ">
         <img src="logo.png" alt="">
         <div class="text" >
             
             
             <h4 >Home</h4>
-                <h4><a href="about.html">
+                <h4>
 
 
                     
                     About
-                </a>
                 
                 </h4>
                 <h4>Classes</h4>
@@ -37,10 +35,31 @@
             <div class="join-us" style="display: flex; gap: 2rem;">
                 <button style="background: transparent; display: flex; border: 1px solid white; cursor: pointer; padding: 10px; border-radius: 5px; " >Contact Us</button>
                 
-                <button style="background: linear-gradient(to right, #f97316, #9a3412); border: none ; padding: 11.5px; border-radius: 5px; cursor: pointer;" >Join Now</button>
-                <a href="loginbtn.html">
-                <button style="background: linear-gradient(to right, #f97316, #9a3412); border: none ; padding: 11.5px; border-radius: 5px; cursor: pointer;" >Login</button>
-                </a>
+
+<!-- php -->
+
+        
+<?php
+session_start();
+
+if(isset($_SESSION['auth'])){  
+   ?>
+ <span class="join" style="background: linear-gradient(to right, #f97316, #9a3412); border: none ; padding: 11.5px; border-radius: 5px; cursor: pointer;"> <a href="logout.php"> Log Out</a> </span>
+
+
+   <?php
+}
+
+else{ //yedi user logged in xaina vaney chai we show this
+  ?>
+ <span class="join" style="background: linear-gradient(to right, #f97316, #9a3412); border: none ; padding: 11.5px; border-radius: 5px; cursor: pointer;"> <a href="register.php"> Join Now</a> </span>
+
+<?php
+}
+
+?>
+
+              
                 
             </div>
       
@@ -49,12 +68,21 @@
         
 
 
+        
+
 <div class="cursor"></div>
+
+
 
 
 <video autoplay="" loop="" muted="" src="gym.mp4"></video>
 <div class="main">
+
+
+    
     <div class="page1">
+
+        
         <h1 class="page1_text" style="font-size: 6vw; text-align: center; font-weight: 500;">
             <p class="p1">
                 Unleash Your Power and
@@ -64,11 +92,16 @@
                 <span class="mighty" style=" color: transparent; background-image:linear-gradient(to right, #f97316,#991b1b); background-clip: text;"> MIGHTY</span>
             </p>
         </h1>
+
+
+        
+        
         <div class="join_now">
-                <span class="join" style="background: linear-gradient(to right, #f97316, #9a3412); border: none ; padding: 11.5px; border-radius: 5px; cursor: pointer;">Join Now</span>
-                <span class="contact" >Contact Us</span>
+                <span class="join" style="background: linear-gradient(to right, #f97316, #9a3412); border: none ; padding: 11.5px; border-radius: 5px; cursor: pointer;">Buy Products</span>
+                <span class="contact" >Get Membership</span>
             </div>
         </div>
+        
         
         
         <div class="page2" style="overflow-x:hidden ;">

@@ -102,7 +102,7 @@ opacity:0,
         trigger: ".main",
         scroller: "body",
         start: "top -2%"
-        , end: "top -200%"
+        , end: "top -300%"
         , scrub: 2
     }
 })
