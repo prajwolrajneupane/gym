@@ -10,7 +10,6 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
 </head>
@@ -94,15 +93,47 @@ else{ //yedi user logged in xaina vaney chai we show this
         </h1>
 
 
+     
+
+
+
+
         
-        
+
+
+ 
+
+
+
         <div class="join_now">
                 <span class="join" style="background: linear-gradient(to right, #f97316, #9a3412); border: none ; padding: 11.5px; border-radius: 5px; cursor: pointer;">Buy Products</span>
-                <span class="contact" >Get Membership</span>
-            </div>
+                <button
+           
+                 >
+                 
+                 <form action="authcode.php" method="POST">
+
+
+               
+             <button type="submit" 
+             
+             type="submit" class="contact" 
+             name="get_membership" 
+             >Get Membership</button>
+            </form>
+                
+            <!-- hehe khas ma esko naam paila contact thyo tesaile class is contact, let it be that way -->
+                </div>
         </div>
         
-        
+
+  
+
+
+
+
+
+
         
         <div class="page2" style="overflow-x:hidden ;">
             <h1 class="about" >

@@ -17,6 +17,10 @@ $cpassword=$_POST['cpassword'];
     $_SESSION['message']="BAKCHODI NAGARI KANA FORM VARRR!!";
     header('Location:register.php');  
 }
+
+
+
+
 // so what this will do is if the password wala part is blank, it wont redirect anywhere, it be in     header('Location:../register.php');  and teta print that warning wala part
 else if($password==$cpassword)
 {
@@ -86,3 +90,32 @@ else{
 ?>
 
 
+
+<!-- when clicked on getMembership -->
+
+<?php
+// Logic for handling the Get Membership button click
+if (isset($_POST['get_membership'])) {
+    if (isset($_SESSION['auth'])) {
+        // Redirect to the membership panel
+        header("Location: getMembership/membership_panel.php");
+
+        ?>
+    <div>
+You are not logged in
+
+    </div>
+
+        <?php 
+    } else {
+        // Redirect to the login form
+        header("Location: register.php");
+       
+    }
+    exit();
+}
+?>
+
+
+<!-- Buy now ma thichda: -->
+<!-- chomu haru yeta kei halao hai -->
