@@ -16,21 +16,54 @@
 </head>
 <body>
 
+    <style>
+
+    a:hover{
+color:#D15914;
+transition: 0.3s;   
+}
+
+    </style>
+
+
+        <!-- href wala lai hover garda blue dekhayera jhyau vayo tesaile yetai change garna lai css lekhya -->
     <div class="nav ">
         <img src="logo.png" alt="">
         <div class="text" >
             
             
-            <h4 >Home</h4>
-                <h4>
+            <h4 >
+                <a href="#page1">
 
 
                     
-                    About
+                    Home
+                </a>
+            
+        </h4>
+                <h4>
+
+<a  href="#page2" >
+
+About
+
+</a>
+                    
                 
                 </h4>
-                <h4>Classes</h4>
-                <h4>Gallery</h4>
+                <h4>
+                    
+                <a href="#page3">
+
+                Classes
+                </a>
+                </h4>
+
+                <a href="gallery.html">
+
+                    <h4>Gallery</h4>
+                </a>
+
             </div>
             <div class="join-us" style="display: flex; gap: 2rem;">
                 <button style="background: transparent; display: flex; border: 1px solid white; cursor: pointer; padding: 10px; border-radius: 5px; " >Contact Us</button>
@@ -80,7 +113,7 @@ else{ //yedi user logged in xaina vaney chai we show this
 
 
     
-    <div class="page1">
+    <div class="page1" id="page1">
 
         
         <h1 class="page1_text" style="font-size: 6vw; text-align: center; font-weight: 500;">
@@ -136,8 +169,8 @@ else{ //yedi user logged in xaina vaney chai we show this
 
 
         
-        <div class="page2" style="overflow-x:hidden ;">
-            <h1 class="about" >
+        <div class="page2" id="page2" style="overflow-x:hidden ;">
+            <h1  class="about" >
                 ABOUT
             </h1>
             
@@ -190,8 +223,8 @@ else{ //yedi user logged in xaina vaney chai we show this
 </div>
 
 
-<div class="page3" style="overflow-x:hidden ;">
-    <h1 class="classes" >
+<div class="page3" id="page3" style="overflow-x:hidden ;">
+    <h1 class="classes"  >
         CLASSES
     </h1>
     
@@ -296,7 +329,7 @@ else{ //yedi user logged in xaina vaney chai we show this
 </div>
 
 <footer style="background-color: #222; color: #ccc; padding: 40px 0; font-family: Arial, sans-serif;">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap;">
+    <div  style=" max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap;">
         
         <!-- Contact Us Section -->
         <div style="flex: 1; min-width: 200px; padding: 20px;">

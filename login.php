@@ -27,7 +27,7 @@
 
           </div>
           <div class="card-header">
-            <h4> LOGIN YOU PIECE OF SHIT! </h4>
+            <h4> LogIn </h4>
             
             
           </div>

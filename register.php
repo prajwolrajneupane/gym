@@ -27,7 +27,7 @@
 
           </div>
           <div class="card-header">
-            <h4> Registration Form </h4>
+            <h4> Application Form </h4>
             
             
           </div>
