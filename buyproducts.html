@@ -6,7 +6,7 @@
     <title>Steel Titans | Buy Products</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="buy.css">
-    <script src="buy.js"></script>
+    <script src="buy.js" defer></script>
 </head>
 <body>
     <section id="header">
@@ -17,15 +17,15 @@
         </div>
     </section>
 
-
     <section id="product1" class="section-p1">
         <h2>Featured Products</h2>
         <p>Our Gym Collection</p>
         <div class="pro-container">
+
             <div class="pro">
                 <img src="resistance-bands.jpeg" alt="Resistance Bands">
                 <div class="des">
-                    <span>Steel Titans</span>
+                    <span>Steel Titans</span><br>
                     <h5>Resistance Bands</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -34,10 +34,14 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <h4>$25</h4>
+                    <h4>Rs. 3000</h4>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Resistance Bands', '$25')">Add to Cart</button>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart('Resistance Bands', 'Rs.3000')">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Resistance Bands', 'Rs.3000')">Buy Now</button>
+                </div>
             </div>
+
             <div class="pro">
                 <img src="treadmills.jpeg" alt="Treadmills">
                 <div class="des">
@@ -50,10 +54,14 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <h4>$799</h4>
+                    <h4>Rs. 107,000</h4>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Treadmills', '$799')">Add to Cart</button>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart('Treadmills', 'Rs. 107,000')">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Treadmills', 'Rs. 107,000')">Buy Now</button>
+                </div>
             </div>
+
             <div class="pro">
                 <img src="free-weights.jpeg" alt="Free Weights">
                 <div class="des">
@@ -66,9 +74,12 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <h4>$150</h4>
+                    <h4>Rs. 20,148</h4>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Free Weights', '$150')">Add to Cart</button>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart('Free Weights', 'Rs. 20,148')">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Free Weights', 'Rs. 20,148')">Buy Now</button>
+                </div>
             </div>
             <div class="pro">
                 <img src="battle-ropes.jpeg" alt="Battle Ropes">
@@ -82,10 +93,14 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <h4>$90</h4>
+                    <h4>Rs. 12,088</h4>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Battle Ropes', '$90')">Add to Cart</button>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart('Battle Ropes', 'Rs. 12,088')">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Battle Ropes', 'Rs. 12,088')">Buy Now</button>
+                </div>
             </div>
+
             <div class="pro">
                 <img src="rowing-machines.jpeg" alt="Rowing Machines">
                 <div class="des">
@@ -98,10 +113,14 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <h4>$500</h4>
+                    <h4>Rs. 67,000</h4>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Rowing Machines', '$500')">Add to Cart</button>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart('Rowing Machines', 'Rs. 67,000')">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Rowing Machines', 'Rs. 67,000')">Buy Now</button>
+                </div>
             </div>
+
             <div class="pro">
                 <img src="ellipticals.jpeg" alt="Ellipticals">
                 <div class="des">
@@ -114,10 +133,14 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <h4>$600</h4>
+                    <h4>Rs. 80,500</h4>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Ellipticals', '$600')">Add to Cart</button>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart('Ellipticals', 'Rs. 80,500')">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Ellipticals', 'Rs. 80,500')">Buy Now</button>
+                </div>
             </div>
+
             <div class="pro">
                 <img src="weight-benches.jpeg" alt="Weight Benches">
                 <div class="des">
@@ -130,9 +153,12 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <h4>$120</h4>
+                    <h4>Rs. 16,000</h4>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Weight Benches', '$120')">Add to Cart</button>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart('Weight Benches', 'Rs. 16,000')">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Weight Benches', 'Rs. 16,000')">Buy Now</button>
+                </div>
             </div>
             <div class="pro">
                 <img src="power-racks.jpeg" alt="Power Racks">
@@ -146,10 +172,14 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <h4>$700</h4>
+                    <h4>Rs. 94,000</h4>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Power Racks', '$700')">Add to Cart</button>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart('Power Racks', 'Rs. 94,000')">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Power Racks', 'Rs. 94,000')">Buy Now</button>
+                </div>
             </div>
+
             <div class="pro">
                 <img src="cable-machines.jpeg" alt="Cable Machines">
                 <div class="des">
@@ -162,10 +192,14 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <h4>$450</h4>
+                    <h4>Rs. 107,000</h4>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Cable Machines', '$450')">Add to Cart</button>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart('Cable Machines', 'Rs. 107,000')">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Cable Machines', 'Rs. 107,000')">Buy Now</button>
+                </div>
             </div>
+
             <div class="pro">
                 <img src="cardio-equipment.jpeg" alt="Cardio Equipment">
                 <div class="des">
@@ -178,10 +212,14 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <h4>$350</h4>
+                    <h4>Rs.60,000</h4>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Cardio Equipment', '$350')">Add to Cart</button>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart('Cardio Equipment', 'Rs.60,000')">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Cardio Equipment', 'Rs.60,000')">Buy Now</button>
+                </div>
             </div>
+
             <div class="pro">
                 <img src="suspension-trainers.jpeg" alt="Suspension Trainers">
                 <div class="des">
@@ -194,10 +232,14 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <h4>$80</h4>
+                    <h4>Rs. 9,000</h4>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Suspension Trainers', '$80')">Add to Cart</button>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart('Suspension Trainers', 'Rs. 9,000')">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Suspension Trainers', 'Rs. 9,000')">Buy Now</button>
+                </div>
             </div>
+
             <div class="pro">
                 <img src="weighted-sleds.jpeg" alt="Weighted Sleds">
                 <div class="des">
@@ -210,10 +252,14 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <h4>$300</h4>
+                    <h4>Rs. 26,000</h4>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Weighted Sleds', '$300')">Add to Cart</button>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart('Weighted Sleds', 'Rs. 26,000')">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Weighted Sleds', 'Rs. 26,000')">Buy Now</button>
+                </div>
             </div>
+
             <div class="pro">
                 <img src="stability-balls.jpeg" alt="Stability Balls">
                 <div class="des">
@@ -226,10 +272,14 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <h4>$30</h4>
+                    <h4>Rs. 5,000</h4>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Stability Balls', '$30')">Add to Cart</button>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart('Stability Balls', 'Rs. 5,000')">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Stability Balls', 'Rs. 5,000')">Buy Now</button>
+                </div>
             </div>
+
             <div class="pro">
                 <img src="spin-bikes.jpeg" alt="Spin Bikes">
                 <div class="des">
@@ -242,10 +292,14 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <h4>$400</h4>
+                    <h4>Rs. 47,000</h4>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Spin Bikes', '$400')">Add to Cart</button>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart('Spin Bikes', 'Rs. 47,000')">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Spin Bikes', 'Rs. 47,000')">Buy Now</button>
+                </div>
             </div>
+
             <div class="pro">
                 <img src="dumbbells.jpeg" alt="Dumbbells">
                 <div class="des">
@@ -258,59 +312,23 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <h4>$50</h4>
+                    <h4>Rs. 10,000</h4>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Dumbbells', '$50')">Add to Cart</button>
+                <div class="button-container">
+                    <button class="add-to-cart" onclick="addToCart('Dumbbells', 'Rs. 10,000')">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Dumbbells', 'Rs. 10,000')">Buy Now</button>
+                </div>
             </div>
+
         </div>
     </section>
 
     <div id="cart-overlay">
-        <span class="close" onclick="toggleCart()">&times;</span>
         <h2>Shopping Cart</h2>
-        <div class="cart-items" id="cart-items">
-        </div>
-        <div id="cart-total">
-            Total: $<span id="total-sum">0</span>
-        </div>
+        <div id="cart-items"></div>
+        <div id="cart-total">Total: $0.00</div>
+        <button onclick="toggleCart()">Close</button>
+        <button onclick="clearCart()">Clear Cart</button>
     </div>
-    <script>
-        let cart = [];
-        let cartCount = document.getElementById('cart-count');
-        let cartItems = document.getElementById('cart-items');
-        let totalSumElement = document.getElementById('total-sum');
-    
-        function addToCart(product, price) {
-            let numericPrice = parseFloat(price.replace('$', ''));
-            cart.push({ product, price: numericPrice });
-            updateCart();
-        }
-    
-        function updateCart() {
-            let cartContent = '';
-            let itemCount = cart.length;
-            let totalSum = 0;
-    
-            cart.forEach(item => {
-                cartContent += `<div>${item.product} - $${item.price.toFixed(2)}</div>`;
-                totalSum += item.price;
-            });
-    
-            cartItems.innerHTML = cartContent;
-            cartCount.textContent = itemCount;
-            totalSumElement.textContent = totalSum.toFixed(2);
-        }
-    
-        function toggleCart() {
-            let cartOverlay = document.getElementById('cart-overlay');
-            if (cartOverlay.style.display === 'none' || cartOverlay.style.display === '') {
-                cartOverlay.style.display = 'block';
-            } else {
-                cartOverlay.style.display = 'none';
-            }
-        }
-    </script>
-    
-    
 </body>
 </html>

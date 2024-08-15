@@ -1,25 +1,42 @@
-function addToCart(product, price) {
-    console.log(`Adding ${product} to cart at ${price}`);
-    let numericPrice = parseFloat(price.replace('$', ''));
-    cart.push({ product, price: numericPrice });
-    updateCart();
+let cart = [];
+const cartCount = document.getElementById('cart-count');
+const cartOverlay = document.getElementById('cart-overlay');
+const cartItems = document.getElementById('cart-items');
+const totalSumElement = document.getElementById('cart-total');
+
+function addToCart(productName, productPrice) {
+    let numericPrice = parseFloat(productPrice.replace('Rs.', '').replace(',', ''));
+    cart.push({ product: productName, price: numericPrice });
+    updateCart(); 
 }
 
 function updateCart() {
-    console.log('Updating cart');
     let cartContent = '';
     let itemCount = cart.length;
     let totalSum = 0;
 
     cart.forEach(item => {
-        cartContent += `<div>${item.product} - $${item.price.toFixed(2)}</div>`;
+        cartContent += `<div>${item.product} - Rs. ${item.price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</div>`;
         totalSum += item.price;
     });
 
-    console.log(`Cart items: ${cartContent}`);
-    console.log(`Total sum: ${totalSum.toFixed(2)}`);
-
     cartItems.innerHTML = cartContent;
-    cartCount.textContent = itemCount;
-    totalSumElement.textContent = totalSum.toFixed(2);
+    cartCount.textContent = itemCount; 
+    totalSumElement.textContent = `Total: Rs. ${totalSum.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}`; 
 }
+
+function buyNow(productName, productPrice) {
+    alert(`You are buying ${productName} for ${productPrice}.`);
+}
+
+function toggleCart() {
+    cartOverlay.style.display = (cartOverlay.style.display === 'none' || cartOverlay.style.display === '') ? 'block' : 'none';
+}
+function clearCart() {
+    cart = [];
+    updateCart(); // Update cart display to reflect the cleared cart
+    // Optionally close the cart overlay when cleared
+    toggleCart();
+}
+// Initialize cart display to be hidden
+cartOverlay.style.display = 'none';
