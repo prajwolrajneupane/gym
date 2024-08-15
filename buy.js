@@ -34,9 +34,7 @@ function toggleCart() {
 }
 function clearCart() {
     cart = [];
-    updateCart(); // Update cart display to reflect the cleared cart
-    // Optionally close the cart overlay when cleared
+    updateCart(); 
     toggleCart();
 }
-// Initialize cart display to be hidden
 cartOverlay.style.display = 'none';
