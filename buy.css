@@ -9,7 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0px 50px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
@@ -53,18 +53,19 @@ body {
 }
 
 #product1 {
-    padding: 40px 20px;
+    padding: 40px 80px;
     background: #fff;
 }
 
 .pro-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-between;
 }
 
 .pro {
+
     width: 100%;
     max-width: 300px;
     padding: 15px;
@@ -138,12 +139,16 @@ body {
     width: 100%; 
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 .add-to-cart {
-    background: orangered;
+    background: #DB5F15;
 }
 
 .add-to-cart:hover {
-    background: #c81d25;
+    background: rgb(255, 146, 73);
 }
 
 .buy-now {

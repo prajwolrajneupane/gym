@@ -42,7 +42,7 @@
   <img src="pro.webp" alt="Denim Jeans" style="width:100%">
   <h2>Six Months Plan</h2>
   <p class="price">Rs. 10000</p>
-  <p>yeah... pretty decent</p>
+  <p>Decent plan to get in shape</p>
   <p><button >
   <a href="success.php">
 
@@ -54,8 +54,8 @@
 <div class="card c3">
   <img src="ronnie.jpg" alt="Denim Jeans" style="width:100%">
   <h2>One Year Plan</h2>
-  <p class="price">Rs. 180000</p>
-  <p>Youll be an absolute beast</p>
+  <p class="price">Rs. 18000</p>
+  <p>Youll can build a solid body</p>
 
   <p><button >
   <a href="success.php">

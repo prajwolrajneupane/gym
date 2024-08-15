@@ -95,6 +95,12 @@ width: 100%;
   flex-direction: column;
   align-items: center;
 }
+.page4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 
 
@@ -140,9 +146,17 @@ width: 100%;
   height: 20%;
 }
 
+/* reviews: */
+.reviews{
+  margin-top:1rem;
+  margin-bottom: -5rem;
+  font-size: 30px; 
+  height: 20%;
+}
 
 
-.about:before, .about:after, .classes:before, .classes:after{
+
+.about:before, .about:after, .classes:before, .classes:after, .reviews:before, .reviews:after{
   content: "";
 display: flex;
   flex: 1 1;
@@ -150,12 +164,12 @@ display: flex;
   border-bottom: 1px solid;
   margin: auto;
 }
-.about:before, .classes:before {
+.about:before, .classes:before,.reviews:before {
   margin-right: -10px;
   margin-left: -10px
 
 }
-.about:after,.classes:after {
+.about:after,.classes:after,.reviews:after {
   margin-right: -10px
 ;
   margin-left: -10px
@@ -338,7 +352,8 @@ top: -100px;
 :root{
   --color-dark: linear-gradient(to right, #f97316,#9a3412)
   --color-secodary-dark: pink;
-  --color-primary:rgb(145, 62, 145);
+  --color-primary:
+  rgb(29, 133, 236);
   --color-text: #8297E2;
   --color-light: #EBEBFB;
 }
@@ -352,9 +367,8 @@ top: -100px;
 }
 
 .board{
-  max-width: 987px;
   width: 100%;
-  background:linear-gradient(to right, #f97316,#9a3412);
+
   text-align: center;
   border-radius: 8px;
   padding: 4em 0;
@@ -377,7 +391,7 @@ top: -100px;
 }
 
 .swiper .swiper-slide .comments{
-  background-color:rgb(250, 118, 255);
+  background-color:rgb(29, 133, 236);
 
   padding: 1.5em 2em;
   width: 50%;

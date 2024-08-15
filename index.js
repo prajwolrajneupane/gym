@@ -135,6 +135,8 @@ tl.to(".classes",{
     
 })
 
+
+
 gsap.to(".content",{
 
     scrollTrigger: {
@@ -172,3 +174,5 @@ const swiper = new Swiper('.swiper', {
 
 
 })
+
+

@@ -25,9 +25,6 @@ function updateCart() {
     totalSumElement.textContent = `Total: Rs. ${totalSum.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}`; 
 }
 
-function buyNow(productName, productPrice) {
-    alert(`You are buying ${productName} for ${productPrice}.`);
-}
 
 function toggleCart() {
     cartOverlay.style.display = (cartOverlay.style.display === 'none' || cartOverlay.style.display === '') ? 'block' : 'none';
