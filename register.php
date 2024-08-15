@@ -81,3 +81,96 @@ Already have an account?
     <a href="login.php">Log In</a>
 </div>
 <div>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+
+    body {
+      background-color: linear-gradient(to right, #f97316, #9a3412); 
+      font-family: 'Poppins', sans-serif; 
+    }
+
+    .py-5 {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+      background-color: #f97316; 
+      color: white;
+      border-bottom: 1px solid #e9ecef;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 1rem;
+    }
+
+    .card-body {
+      padding: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-label {
+      font-weight: 500;
+      color: #333;
+    }
+
+    input.form-control {
+      border-radius: 5px;
+      border: 1px solid #ced4da;
+    }
+
+    input.form-control:focus {
+      border-color: #f97316; /* Orange color */
+      box-shadow: 0 0 0 0.2rem rgba(249, 115, 22, 0.25); /* Light orange shadow */
+    }
+
+    .btn-primary {
+      background-color: #f97316; /* Orange color */
+      border-color: #f97316; /* Orange color */
+      border-radius: 5px;
+      padding: 0.75rem 1.5rem;
+    }
+
+    .btn-primary:hover {
+      background-color: #d96313; 
+      border-color: #d96313; 
+    }
+
+    .alert-warning {
+      background-color: #fff3cd;
+      color: #856404;
+      border: 1px solid #ffeeba;
+      border-radius: 5px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .forgot {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .forgot p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .forgot a {
+      color: #f97316; 
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .forgot a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steel Titans | Buy Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="buy.css">
+    <script src="buy.js"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo.png" class="logo" alt="Steel Titans Logo" width="100px" height="100px"></a>
+        <div id="cart-icon" onclick="toggleCart()">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </section>
+
+    <section id="hero">
+        <h4>Trade with us</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & up to 60% off!</p>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Our Gym Collection</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="resistance-bands.jpeg" alt="Resistance Bands">
+                <div class="des">
+                    <span>Steel Titans</span>
+                    <h5>Resistance Bands</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4>$25</h4>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Resistance Bands', '$25')">Add to Cart</button>
+            </div>
+            <div class="pro">
+                <img src="treadmills.jpeg" alt="Treadmills">
+                <div class="des">
+                    <span>Steel Titans</span>
+                    <h5>Treadmills</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4>$799</h4>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Treadmills', '$799')">Add to Cart</button>
+            </div>
+            <div class="pro">
+                <img src="free-weights.jpeg" alt="Free Weights">
+                <div class="des">
+                    <span>Steel Titans</span>
+                    <h5>Free Weights</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4>$150</h4>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Free Weights', '$150')">Add to Cart</button>
+            </div>
+            <div class="pro">
+                <img src="battle-ropes.jpeg" alt="Battle Ropes">
+                <div class="des">
+                    <span>Steel Titans</span>
+                    <h5>Battle Ropes</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4>$90</h4>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Battle Ropes', '$90')">Add to Cart</button>
+            </div>
+            <div class="pro">
+                <img src="rowing-machines.jpeg" alt="Rowing Machines">
+                <div class="des">
+                    <span>Steel Titans</span>
+                    <h5>Rowing Machines</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4>$500</h4>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Rowing Machines', '$500')">Add to Cart</button>
+            </div>
+            <div class="pro">
+                <img src="ellipticals.jpeg" alt="Ellipticals">
+                <div class="des">
+                    <span>Steel Titans</span>
+                    <h5>Ellipticals</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4>$600</h4>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Ellipticals', '$600')">Add to Cart</button>
+            </div>
+            <div class="pro">
+                <img src="weight-benches.jpeg" alt="Weight Benches">
+                <div class="des">
+                    <span>Steel Titans</span>
+                    <h5>Weight Benches</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4>$120</h4>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Weight Benches', '$120')">Add to Cart</button>
+            </div>
+            <div class="pro">
+                <img src="power-racks.jpeg" alt="Power Racks">
+                <div class="des">
+                    <span>Steel Titans</span>
+                    <h5>Power Racks</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4>$700</h4>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Power Racks', '$700')">Add to Cart</button>
+            </div>
+            <div class="pro">
+                <img src="cable-machines.jpeg" alt="Cable Machines">
+                <div class="des">
+                    <span>Steel Titans</span>
+                    <h5>Cable Machines</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4>$450</h4>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Cable Machines', '$450')">Add to Cart</button>
+            </div>
+            <div class="pro">
+                <img src="cardio-equipment.jpeg" alt="Cardio Equipment">
+                <div class="des">
+                    <span>Steel Titans</span>
+                    <h5>Cardio Equipment</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4>$350</h4>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Cardio Equipment', '$350')">Add to Cart</button>
+            </div>
+            <div class="pro">
+                <img src="suspension-trainers.jpeg" alt="Suspension Trainers">
+                <div class="des">
+                    <span>Steel Titans</span>
+                    <h5>Suspension Trainers</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4>$80</h4>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Suspension Trainers', '$80')">Add to Cart</button>
+            </div>
+            <div class="pro">
+                <img src="weighted-sleds.jpeg" alt="Weighted Sleds">
+                <div class="des">
+                    <span>Steel Titans</span>
+                    <h5>Weighted Sleds</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4>$300</h4>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Weighted Sleds', '$300')">Add to Cart</button>
+            </div>
+            <div class="pro">
+                <img src="stability-balls.jpeg" alt="Stability Balls">
+                <div class="des">
+                    <span>Steel Titans</span>
+                    <h5>Stability Balls</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4>$30</h4>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Stability Balls', '$30')">Add to Cart</button>
+            </div>
+            <div class="pro">
+                <img src="spin-bikes.jpeg" alt="Spin Bikes">
+                <div class="des">
+                    <span>Steel Titans</span>
+                    <h5>Spin Bikes</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4>$400</h4>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Spin Bikes', '$400')">Add to Cart</button>
+            </div>
+            <div class="pro">
+                <img src="dumbbells.jpeg" alt="Dumbbells">
+                <div class="des">
+                    <span>Steel Titans</span>
+                    <h5>Dumbbells</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4>$50</h4>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Dumbbells', '$50')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-overlay">
+        <span class="close" onclick="toggleCart()">&times;</span>
+        <h2>Shopping Cart</h2>
+        <div class="cart-items" id="cart-items">
+        </div>
+        <div id="cart-total">
+            Total: $<span id="total-sum">0</span>
+        </div>
+    </div>
+    <script>
+        let cart = [];
+        let cartCount = document.getElementById('cart-count');
+        let cartItems = document.getElementById('cart-items');
+        let totalSumElement = document.getElementById('total-sum');
+    
+        function addToCart(product, price) {
+            let numericPrice = parseFloat(price.replace('$', ''));
+            cart.push({ product, price: numericPrice });
+            updateCart();
+        }
+    
+        function updateCart() {
+            let cartContent = '';
+            let itemCount = cart.length;
+            let totalSum = 0;
+    
+            cart.forEach(item => {
+                cartContent += `<div>${item.product} - $${item.price.toFixed(2)}</div>`;
+                totalSum += item.price;
+            });
+    
+            cartItems.innerHTML = cartContent;
+            cartCount.textContent = itemCount;
+            totalSumElement.textContent = totalSum.toFixed(2);
+        }
+    
+        function toggleCart() {
+            let cartOverlay = document.getElementById('cart-overlay');
+            if (cartOverlay.style.display === 'none' || cartOverlay.style.display === '') {
+                cartOverlay.style.display = 'block';
+            } else {
+                cartOverlay.style.display = 'none';
+            }
+        }
+    </script>
+    
+    
+</body>
+</html>
