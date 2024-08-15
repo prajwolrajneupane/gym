@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Review Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .review-section {
+            width: 50%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2, h3 {
+            text-align: center;
+        }
+
+        #reviews-container {
+            margin-top: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .review {
+            background: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .review h4 {
+            margin: 0;
+        }
+
+        .review p {
+            margin: 5px 0 0;
+        }
+
+        .review-form {
+            margin-top: 20px;
+        }
+
+        #review-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #review-form input,
+        #review-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #review-form button {
+            padding: 10px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #review-form button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="review-section">
+        <h2>Customer Reviews</h2>
+        <div id="reviews-container">
+            <!-- Reviews will be dynamically inserted here -->
+        </div>
+        <div class="review-form">
+            <h3>Leave a Review</h3>
+            <form id="review-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <textarea id="review" placeholder="Your Review" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('review-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const review = document.getElementById('review').value;
+
+            if (name && review) {
+                addReview(name, review);
+                document.getElementById('name').value = '';
+                document.getElementById('review').value = '';
+            }
+        });
+
+        function addReview(name, review) {
+            const reviewContainer = document.createElement('div');
+            reviewContainer.classList.add('review');
+
+            const reviewAuthor = document.createElement('h4');
+            reviewAuthor.textContent = name;
+
+            const reviewText = document.createElement('p');
+            reviewText.textContent = review;
+
+            reviewContainer.appendChild(reviewAuthor);
+            reviewContainer.appendChild(reviewText);
+
+            document.getElementById('reviews-container').appendChild(reviewContainer);
+        }
+    </script>
+</body>
+</html>

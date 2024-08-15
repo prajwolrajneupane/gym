@@ -19,7 +19,7 @@
     <style>
 
     a:hover{
-color:#D15914;
+color:black;
 transition: 0.3s;   
 }
 
@@ -140,7 +140,15 @@ else{ //yedi user logged in xaina vaney chai we show this
 
 
         <div class="join_now">
-                <span class="join" style="background: linear-gradient(to right, #f97316, #9a3412); border: none ; padding: 11.5px; border-radius: 5px; cursor: pointer;">Buy Products</span>
+
+        
+                <span class="join" style="background: linear-gradient(to right, #f97316, #9a3412); border: none ; padding: 11.5px; border-radius: 5px; cursor: pointer;">
+            <a href="buyproducts.html">
+
+                Buy Products
+
+            </a>        
+            </span>
                 <button
            
                  >
