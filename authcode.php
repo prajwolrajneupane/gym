@@ -1,3 +1,11 @@
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+
+
+
+
 <?php
 session_start(); //session start garna
 include('dbcon.php');
@@ -14,11 +22,9 @@ $password=$_POST['password'];
 $cpassword=$_POST['cpassword'];
 
  if($password==false || $cpassword===false){
-    $_SESSION['message']="BAKCHODI NAGARI KANA FORM VARRR!!";
+    $_SESSION['message']="ramrari form varnus🙏🙏";
     header('Location:register.php');  
 }
-
-
 
 
 // so what this will do is if the password wala part is blank, it wont redirect anywhere, it be in     header('Location:../register.php');  and teta print that warning wala part
@@ -39,7 +45,7 @@ else{
 else{
     $_SESSION['message']="Passwords do not match"; //session ma store that message
 
-header('Location:../register.php'); //when things goes wrong, we get redirected back to register.php
+header('Location:register.php'); //when things goes wrong, we get redirected back to register.php
 }
 }
 
