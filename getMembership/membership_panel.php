@@ -55,7 +55,7 @@
   <img src="ronnie.jpg" alt="Denim Jeans" style="width:100%">
   <h2>One Year Plan</h2>
   <p class="price">Rs. 18000</p>
-  <p>Youll can build a solid body</p>
+  <p>You can build a solid body</p>
 
   <p><button >
   <a href="success.php">

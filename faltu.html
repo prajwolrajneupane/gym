@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="contactform.css">
+</head>
+
+<body>
+     <div class="contact-container">
+       <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-titlt">
+            <h2> Get in touch</h2>
+            <hr>
+        </div>
+        <input type="hidden" name="access_key" value="7cc7d116-f28e-4a48-86a7-79aea7048e1b">
+        <input type="text" name="name" placeholder="Enter Your Name" class="contact-inputs" required>
+        <input type="email" name="email" placeholder=" Enter Your Email" class="contact-inputs" required>
+        <textarea name="message" placeholder="Message"  class="contact-inputs" required></textarea> 
+        <button type="submit"> Submit <img src="arrow1.png" alt=""></button>
+
+       </form>
+     </div>
+
+     
+     <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit';
+    background: linear-gradient(rgb(95, 95, 134), #cc7dcc);
+}
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500px;
+    color: #666;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 2px solid #ff994f;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+@media (max-width: 800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+     </style>
+</body>
+</html>
+

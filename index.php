@@ -339,6 +339,110 @@ else{ //yedi user logged in xaina vaney chai we show this
 
 </div>
 
+<div class="contact-container">
+       <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-titlt">
+            <h2> Get in touch</h2>
+            <hr>
+        </div>
+        <input type="hidden" name="access_key" value="7cc7d116-f28e-4a48-86a7-79aea7048e1b">
+        <input type="text" name="name" placeholder="Enter Your Name" class="contact-inputs" required>
+        <input type="email" name="email" placeholder=" Enter Your Email" class="contact-inputs" required>
+        <textarea name="message" placeholder="Message"  class="contact-inputs" required></textarea> 
+        <button type="submit"> Submit <img src="arrow1.png" alt=""></button>
+
+       </form>
+     </div>
+
+     
+     <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    background:url('https://i.pinimg.com/736x/6e/7c/4d/6e7c4d311bfc2abecbb04866afac4f33.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500px;
+    color: #666;
+    border-radius: 5px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 5px;
+}
+.contact-inputs:focus{
+    border: 2px solid #ff994f;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background:linear-gradient(to right, #f97316,#991b1b);
+    
+    cursor: pointer;
+    transition: 0.3s;
+}
+@media (max-width: 800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+.contact-left button:hover{
+
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+}
+
+     </style>
+
+
+
 <footer style="background-color: #222; color: #ccc; padding: 40px 0; font-family: Arial, sans-serif;">
     <div  style=" max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap;">
         
